@@ -5,7 +5,8 @@
     "version" : "1.0.0",
     "title" : "HeySteimkeBase",
     "contact" : {
-      "email" : "marius.schlueter@intecelektro.de"
+      "email" : "marius.schlueter@intecelektro.de",
+      "name" : "Marius Schlueter"
     }
   },
   "host" : "rkp.intecelektro.de:30000",
