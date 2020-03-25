@@ -1,0 +1,194 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "HeySteimkeBase REST API",
+    "version" : "1.0.0",
+    "title" : "HeySteimkeBase",
+    "contact" : {
+      "email" : "marius.schlueter@intecelektro.de"
+    }
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/imeichboden/HeySteimkeBase/1.0.0",
+  "schemes" : [ "https", "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/ping" : {
+      "get" : {
+        "summary" : "check if server alive",
+        "operationId" : "ping",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "some answer",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/items" : {
+      "get" : {
+        "summary" : "Returns ids of existing items",
+        "operationId" : "getAvaiIds",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Successfully returning array of existing ids",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/item/{id}" : {
+      "get" : {
+        "summary" : "Returns Specific item by id",
+        "operationId" : "getItem",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Id of item to get",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Found item and returning it",
+            "schema" : {
+              "$ref" : "#/definitions/Item"
+            }
+          },
+          "404" : {
+            "description" : "Item not found"
+          }
+        }
+      },
+      "put" : {
+        "summary" : "Replace existing item",
+        "operationId" : "replaceItem",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Id of item to get",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "in" : "body",
+          "name" : "item",
+          "description" : "Item to replace",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Item"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          },
+          "404" : {
+            "description" : "Item not found"
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Remove Item",
+        "operationId" : "deleteItem",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Id of item to get",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          },
+          "404" : {
+            "description" : "Item not found"
+          }
+        }
+      }
+    },
+    "/item" : {
+      "post" : {
+        "summary" : "Add Item",
+        "operationId" : "addItem",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "item",
+          "description" : "Item to add",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Item"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Item" : {
+      "required" : [ "id" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "example" : 123,
+          "description" : "Identifier"
+        },
+        "state" : {
+          "type" : "string",
+          "example" : "0",
+          "description" : "State",
+          "enum" : [ "notassigned", "assigned" ]
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "Abwaschen",
+          "description" : "Name of Item"
+        },
+        "shortdesc" : {
+          "type" : "string",
+          "example" : "Abwaschen in der Kueche",
+          "description" : "Short description for item"
+        },
+        "desc" : {
+          "type" : "string",
+          "example" : "Abwaschen aller Toepfe und Spuelmaschine einraumen",
+          "description" : "Detailed Itemdescription"
+        },
+        "creatorId" : {
+          "type" : "integer",
+          "example" : 321,
+          "description" : "ID of creator of this item"
+        },
+        "assignedId" : {
+          "type" : "integer",
+          "example" : 213,
+          "description" : "ID of assigned person for this item"
+        },
+        "priority" : {
+          "type" : "integer",
+          "example" : 50,
+          "description" : "priority of this item"
+        },
+        "workload" : {
+          "type" : "integer",
+          "example" : 30,
+          "description" : "workload for this item"
+        }
+      }
+    }
+  }
+}
