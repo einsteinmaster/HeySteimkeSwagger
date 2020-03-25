@@ -24,7 +24,7 @@
         },
         "state" : {
           "type" : "string",
-          "enum" : [ "notassigned", "assigned" ],
+          "enum" : [ "created", "assigned", "inprogress", "finished", "paused", "aborted" ],
           "description" : "State",
           "example" : 0
         },
