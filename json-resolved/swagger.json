@@ -152,7 +152,7 @@
           "type" : "string",
           "example" : "0",
           "description" : "State",
-          "enum" : [ "notassigned", "assigned" ]
+          "enum" : [ "created", "assigned", "inprogress", "finished", "paused", "aborted" ]
         },
         "name" : {
           "type" : "string",
