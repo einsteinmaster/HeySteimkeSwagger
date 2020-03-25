@@ -8,9 +8,9 @@
       "email" : "marius.schlueter@intecelektro.de"
     }
   },
-  "host" : "virtserver.swaggerhub.com",
-  "basePath" : "/imeichboden/HeySteimkeBase/1.0.0",
-  "schemes" : [ "https", "http" ],
+  "host" : "rkp.intecelektro.de:30000",
+  "basePath" : "/api",
+  "schemes" : [ "http" ],
   "consumes" : [ "application/json" ],
   "produces" : [ "application/json" ],
   "paths" : {
