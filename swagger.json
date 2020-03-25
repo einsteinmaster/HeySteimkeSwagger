@@ -26,7 +26,7 @@
           "type" : "string",
           "enum" : [ "created", "assigned", "inprogress", "finished", "paused", "aborted" ],
           "description" : "State",
-          "example" : 0
+          "example" : "created"
         },
         "name" : {
           "type" : "string",
