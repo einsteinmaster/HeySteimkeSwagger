@@ -150,7 +150,7 @@
         },
         "state" : {
           "type" : "string",
-          "example" : "0",
+          "example" : "created",
           "description" : "State",
           "enum" : [ "created", "assigned", "inprogress", "finished", "paused", "aborted" ]
         },
