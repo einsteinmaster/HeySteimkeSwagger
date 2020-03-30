@@ -194,7 +194,9 @@
           "example" : 10,
           "description" : "id of place or category"
         },
-        "createtime" : { }
+        "createtime" : {
+          "$ref" : "#/definitions/TimeStamp"
+        }
       }
     },
     "TimeStamp" : {
