@@ -70,6 +70,23 @@
         }
       },
       "required" : [ "id" ]
+    },
+    "TimeStamp" : {
+      "year" : {
+        "type" : "integer"
+      },
+      "month" : {
+        "type" : "integer"
+      },
+      "day" : {
+        "type" : "integer"
+      },
+      "hour" : {
+        "type" : "integer"
+      },
+      "minute" : {
+        "type" : "integer"
+      }
     }
   },
   "paths" : {
