@@ -67,6 +67,12 @@
           "type" : "integer",
           "description" : "id of place or category",
           "example" : 10
+        },
+        "createtime" : {
+          "type" : "object",
+          "scheme" : {
+            "$ref" : "#/definitions/TimeStamp"
+          }
         }
       },
       "required" : [ "id" ]
