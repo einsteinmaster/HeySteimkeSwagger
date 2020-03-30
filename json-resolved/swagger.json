@@ -200,6 +200,24 @@
         }
       }
     },
-    "TimeStamp" : { }
+    "TimeStamp" : {
+      "properties" : {
+        "year" : {
+          "type" : "integer"
+        },
+        "month" : {
+          "type" : "integer"
+        },
+        "day" : {
+          "type" : "integer"
+        },
+        "hour" : {
+          "type" : "integer"
+        },
+        "minute" : {
+          "type" : "integer"
+        }
+      }
+    }
   }
 }
