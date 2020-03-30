@@ -70,6 +70,12 @@
         },
         "createtime" : {
           "$ref" : "#/definitions/TimeStamp"
+        },
+        "assignedtime" : {
+          "$ref" : "#/definitions/TimeStamp"
+        },
+        "finishedtime" : {
+          "$ref" : "#/definitions/TimeStamp"
         }
       },
       "required" : [ "id" ]
