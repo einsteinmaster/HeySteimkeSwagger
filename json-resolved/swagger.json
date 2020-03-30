@@ -193,6 +193,10 @@
           "type" : "integer",
           "example" : 10,
           "description" : "id of place or category"
+        },
+        "createtime" : {
+          "type" : "object",
+          "properties" : { }
         }
       }
     },
