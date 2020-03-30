@@ -69,9 +69,7 @@
           "example" : 10
         },
         "createtime" : {
-          "scheme" : {
-            "$ref" : "#/definitions/TimeStamp"
-          }
+          "$ref" : "#/definitions/TimeStamp"
         }
       },
       "required" : [ "id" ]
