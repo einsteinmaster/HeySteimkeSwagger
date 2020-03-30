@@ -195,6 +195,7 @@
           "description" : "id of place or category"
         }
       }
-    }
+    },
+    "TimeStamp" : { }
   }
 }
