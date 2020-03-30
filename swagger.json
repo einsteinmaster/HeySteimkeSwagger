@@ -69,7 +69,6 @@
           "example" : 10
         },
         "createtime" : {
-          "type" : "object",
           "scheme" : {
             "$ref" : "#/definitions/TimeStamp"
           }
