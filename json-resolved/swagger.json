@@ -159,7 +159,7 @@
           "example" : "Abwaschen",
           "description" : "Name of Item"
         },
-        "shortdesc" : {
+        "shortDesc" : {
           "type" : "string",
           "example" : "Abwaschen in der Kueche",
           "description" : "Short description for item"
@@ -194,13 +194,13 @@
           "example" : 10,
           "description" : "id of place or category"
         },
-        "createtime" : {
+        "createTime" : {
           "$ref" : "#/definitions/TimeStamp"
         },
-        "assignedtime" : {
+        "assignedTime" : {
           "$ref" : "#/definitions/TimeStamp"
         },
-        "finishedtime" : {
+        "finishedTime" : {
           "$ref" : "#/definitions/TimeStamp"
         }
       }
