@@ -189,7 +189,7 @@
           "example" : 30,
           "description" : "workload for this item"
         },
-        "placeid" : {
+        "placeId" : {
           "type" : "integer",
           "example" : 10,
           "description" : "id of place or category"
