@@ -33,7 +33,7 @@
           "description" : "Name of Item",
           "example" : "Abwaschen"
         },
-        "shortDesc" : {
+        "shortdesc" : {
           "type" : "string",
           "description" : "Short description for item",
           "example" : "Abwaschen in der Kueche"
@@ -43,12 +43,12 @@
           "description" : "Detailed Itemdescription",
           "example" : "Abwaschen aller Toepfe und Spuelmaschine einraumen"
         },
-        "creatorId" : {
+        "creatorid" : {
           "type" : "integer",
           "description" : "ID of creator of this item",
           "example" : 321
         },
-        "assignedId" : {
+        "assignedid" : {
           "type" : "integer",
           "description" : "ID of assigned person for this item",
           "example" : 213
@@ -63,18 +63,18 @@
           "description" : "workload for this item",
           "example" : 30
         },
-        "placeId" : {
+        "placeid" : {
           "type" : "integer",
           "description" : "id of place or category",
           "example" : 10
         },
-        "createTime" : {
+        "createtime" : {
           "$ref" : "#/definitions/TimeStamp"
         },
-        "assignedTime" : {
+        "assignedtime" : {
           "$ref" : "#/definitions/TimeStamp"
         },
-        "finishedTime" : {
+        "finishedtime" : {
           "$ref" : "#/definitions/TimeStamp"
         }
       },
