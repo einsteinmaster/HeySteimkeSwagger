@@ -9,7 +9,7 @@
       "name" : "Marius Schlueter"
     }
   },
-  "host" : "rkp.intecelektro.de:30000",
+  "host" : "rkp.intecelektro.de:30002",
   "basePath" : "/api",
   "schemes" : [ "http", "https" ],
   "consumes" : [ "application/json" ],
